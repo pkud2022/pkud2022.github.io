@@ -1,0 +1,89 @@
+/*CV Piotr Kuderski, Lab Week 3
+Classes: personalData, education, professionalExperience remain empty as this is intended to allow for future changes to the html's style.  */
+@media(min-width:800px){
+	.interests{
+      display:flex;  
+	  border:1px #ccc solid;
+	  padding:10px;
+      justify-content:left;
+	  justify-content:space-between;
+	  
+    
+}
+}
+h1{
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h2{
+	text-transform: uppercase;
+	text-align: left;
+}
+	
+h3{
+	text-align: left;
+}
+
+
+.personalData{
+    }
+	
+.education{
+}
+	
+.professionalExperience{ 
+}
+
+.skills{
+      display:flex;
+	  flex-wrap:wrap;
+	  justify-content:space-between; 
+}
+
+.row-1{
+	display:flex;
+	flex-direction: row;
+    }
+	
+.row-2{
+      	display:flex;
+		flex-direction: row;
+    }
+
+
+    
+  
+ .row-1 div{
+    border:1px #ccc solid;
+    padding:10px; 
+  }
+  
+.box-1{
+	flex:1;
+	order:1;
+}
+
+.box-2{
+	flex:2;
+	order:2;
+}
+ 
+.box-3{
+	flex:2;
+	order:3;
+} 
+
+.box-i{
+	display:flex;
+	border:1px grey solid;
+	flex-basis: 15%;
+	flex-wrap:wrap;
+	
+} 
+.box-s{
+	display:flex;
+	flex-wrap:wrap;
+	flex-basis:10%;
+	border:1px grey solid;
+} 
