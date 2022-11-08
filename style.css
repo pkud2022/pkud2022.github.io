@@ -16,6 +16,7 @@ h2{
 	text-align: left;
 }
 
+/* THIS FRAGMENT HAS NOT BEEN APPLIED BUT IS HELPFUL IN TESTING
 .show{
 	background-color: white;
 	color:black;
@@ -24,7 +25,7 @@ h2{
 	marigin-top:50px;
 	min-height:;
 	justify-content:space-between;
-}
+}*/
 .separation{
 	padding:20px;
 	
