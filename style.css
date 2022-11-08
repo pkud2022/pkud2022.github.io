@@ -1,6 +1,40 @@
-/*CV Piotr Kuderski, Lab Week 3
-Classes: personalData, education, professionalExperience remain empty as this is intended to allow for future changes to the html's style.  */
-@media(min-width:800px){
+/*CV Piotr Kuderski, Lab Week 6
+8/11/2022
+Bootstrap */
+BODY{
+	background-color:#E9E9E9;
+	text-align:left;
+	color:black;
+}
+h1{
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h2{
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.show{
+	background-color: white;
+	color:black;
+}
+.row{
+	marigin-top:50px;
+	min-height:;
+	justify-content:space-between;
+}
+.separation{
+	padding:20px;
+	
+}
+
+
+
+
+/*BELOW THERE IS CSS USED IN LAB IN WEEK 3. THIS IS COMMENTED-OUT AT THIS JUNCTURE. PLEASE IGNORE IT. THIS IS TO BE USED IN CASE SOME OF THE CSS NEEDS TO BE REVERTED AT A LATER STAGE.*/
+/* @media(min-width:800px){ 
 	.interests{
       display:flex;  
 	  border:1px #ccc solid;
@@ -86,4 +120,4 @@ h3{
 	flex-wrap:wrap;
 	flex-basis:10%;
 	border:1px grey solid;
-} 
+} */
