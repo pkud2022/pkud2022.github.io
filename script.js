@@ -68,7 +68,7 @@ function check(){
 			document.getElementById("game").innerHTML="Your choice was "+pick+". The computer chose paper. You win.";
 		}
 		else if(computerPick=="3"){
-			document.getElementById("game").innerHTML="Your choice was "+pick+". The computer chose scissors. That's a draw";
+			document.getElementById("game").innerHTML="Your choice was "+pick+". The computer chose scissors. That's a draw.";
 		}
 		hide();
 	}
@@ -87,7 +87,7 @@ function check(){
 		hide();
 	}
 	else {
-		alert("Invalid input, try again");
+		alert("Invalid input, try again.");
 	}*/
 	
 
