@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Rock Paper Scissors game v.2.0</title>
+		<title>ShoppingList Array</title>
 		<link rel="stylesheet" href="style.css"/>
 	</head>
-	<body>
-		<h1>Welcome my Rock Paper Scissors game</h1>
-		<form id="game">
-			<label>Make your choice:</label>
-			<input id="pick">
-			<br>
-		</form>
-		<p>*Your options are: rock, paper, scissors</p>
-		<button id="button" onclick="check()">Submit</button>
-		<script src="script.js"></script>
+	<body onload="addItems()">
+		<h1> Shopping list website for all your shopping list needs. <h1>
+<!--		<button onclick="addItems()">Add 3 items</button>		-->
 		
+		<button onclick="addToEnd()">Push - add last item</button>
+		<button onclick="removeFromEnd()">Pop - remove last item</button>
+		<button onclick="addToStart()">Unshift - add 1st item</button>
+		<button onclick="removeFromStart()">Shift - remove 1st item</button>
+		<button onclick="listItems2()">Refresh</button>
+		<button onclick="f5()">Delete List</button>
+		<h4>Please use buttons on top to edit your shopping list.<h4>
+		<h1> List of items in one line: <span id="main")></span><h1><br><br>
+		<h1> List of items in an unsorted list:<h1>
+		<ul id="shoppingList"></ul>
+		
+		
+		<script src="script.js"></script>
 	</body>
 </html>
+

@@ -1,97 +1,46 @@
-//ver2.0
+let shoppingList=[];
 
-/*function roll(){
-	var computerPick = Math.floor(Math.random() * 3)+1;
+function addItems(){
+	let num1=prompt("Enter amount of shopping items to add to your list. Please use digits only.");
+	for(i=0;i<num1;i++){
+		shoppingList[i]=prompt("Please add "+num1+" items to your shopping list to get the shopping started.");
+	}
 	
-	if( computerPick = 1){
-		computerPick = "rock";
-	}
-	else if( computerPick = 2){
-		computerPick = "paper";
-	}
-	else if( computerPick = 3){
-		computerPick = "scissors";
-	}
-	else{
-		alert("roll() function error");
-	}
-}*/
-
-function check(){
-	//var age=parseInt(document.getElementById("formAge").value);
-	var pick = document.getElementById("pick").value;
-	var computerPick = Math.floor(Math.random() * 3)+1;	
-		
-//	if( computerPick = 1){
-//	var	computerPick = "rock";
-//	}
-//	else if( computerPick = 2){
-//	var	computerPick = "paper";
-//	}
-//	else if( computerPick = 3){
-//	var	computerPick = "scissors";
-//	}
-//	else{
-//		alert("roll() function error");
-//	}
-	
-	
-	if(pick=="rock"){
-		if(computerPick=="1"){
-			document.getElementById("game").innerHTML="Your choice was "+pick+". The computer chose rock. That's a draw.";
-		}
-		else if(computerPick=="2"){
-			document.getElementById("game").innerHTML="Your choice was "+pick+". The computer chose paper. You lose.";
-		}
-		else if(computerPick=="3"){
-			document.getElementById("game").innerHTML="Your choice was "+pick+". The computer chose scissors. You win.";
-		}
-		hide();
-	}
-	else if (pick=="paper"){
-		if(computerPick=="1"){
-			document.getElementById("game").innerHTML="Your choice was "+pick+". The computer chose rock. You win.";
-		}
-		else if(computerPick=="2"){
-			document.getElementById("game").innerHTML="Your choice was "+pick+". The computer chose paper. That's a draw.";
-		}
-		else if(computerPick=="3"){
-			document.getElementById("game").innerHTML="Your choice was "+pick+". The computer chose scissors. You lose.";
-		}
-		hide();
-	}
-	else if (pick=="scissors"){
-		if(computerPick=="1"){
-			document.getElementById("game").innerHTML="Your choice was "+pick+". The computer chose rock. You lose.";
-		}
-		else if(computerPick=="2"){
-			document.getElementById("game").innerHTML="Your choice was "+pick+". The computer chose paper. You win.";
-		}
-		else if(computerPick=="3"){
-			document.getElementById("game").innerHTML="Your choice was "+pick+". The computer chose scissors. That's a draw.";
-		}
-		hide();
-	}
-	else{
-		alert("Invalid input, try again");
-	}
+	document.getElementById("main").innerHTML=shoppingList.toString();//this line prints the list in one line with commas
+	listItems2();
 }
-/*		
-		{
-			document.getElementById("ageCheck").innerHTML="Welcome, "+name;
-		}
-		hide();
-	}
-	else if(age<18){
-		document.getElementById("ageCheck").innerHTML="Sorry "+name+", not tonight!";	
-		hide();
-	}
-	else {
-		alert("Invalid input, try again.");
-	}*/
-	
 
-
-function hide(){
-document.getElementById("button").style.visibility="hidden";
+function listItems(){
+	document.getElementById("main").innerHTML=shoppingList.toString();
 }
+function addToEnd(){
+	shoppingList.push(prompt("Enter item name"));
+	listItems2();
+}
+function removeFromEnd(){
+	shoppingList.pop();
+	listItems2();
+}
+function addToStart(){
+	shoppingList.unshift(prompt("Enter item name"));
+	listItems2();
+}
+function removeFromStart(){
+	shoppingList.shift();
+	listItems2();
+}
+function listItems2(){
+	
+	//  document.getElementById("main").innerHTML=shoppingList.toString(); 	//this line prints the list in one line with commas
+
+      let itemsList = document.getElementById("shoppingList");
+      for (i = 0; i < shoppingList.length; ++i) {
+         var ulItem = document.createElement('li');
+         ulItem.innerText = shoppingList[i];
+         itemsList.appendChild(ulItem);
+	  }
+
+}
+function f5(){
+    window.location.reload();
+} 
